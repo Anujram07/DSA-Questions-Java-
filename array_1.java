@@ -14,7 +14,7 @@ public class array_1{
 
 
               int  max = 0;
-            for(int i = 0; i<=arr.length-1;i++){
+            for(int i = 0; i<arr.length-1;i++){
                 if(arr[i]>arr[i+1]){
                     max=arr[i];
                 }
@@ -24,5 +24,14 @@ public class array_1{
             }
        }
             System.out.println("maximum:-"+max);
+
+
+    int min = 1;
+    for(int j=0;j<arr.length-1;j++){
+      if(arr[j]<arr[j+1]){
+        min = arr[j];
+      }
+    }
+    System.out.println("minimum:-"+min);
     }
 }
