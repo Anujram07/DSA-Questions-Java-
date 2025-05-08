@@ -12,9 +12,18 @@ public class array_2 {
            arr[i]=in.nextInt();
        }
 
+    
+      for(int i=0;i<arr.length-i;i++){
+        int  temp = arr[i];
+        arr[i] = arr[arr.length-i-1];
+        arr[arr.length-i-1]=temp;
+      }
+      
+      for (int k = 0; k < arr.length; k++) {
+          System.out.print(arr[k]);
+      }
 
-       for(int i=arr.length-1;i>=0;i--){
-        System.out.println("Reversed Array:-"+arr[i]);
+      
        }
     }
-}
+
