@@ -25,7 +25,7 @@ public class array_1{
             System.out.println("maximum:-"+max);
 
 
-    int min = 1;
+    int min = 0;
     for(int j=0;j<arr.length-1;j++){
       if(arr[j]<arr[j+1]){
         min = arr[j];
