@@ -1,3 +1,6 @@
+//to find min and max in an array 
+
+
 import java.util.Scanner;
 public class array_1{
     public static void main(String[] args) {

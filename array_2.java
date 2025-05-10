@@ -1,4 +1,4 @@
-
+// to reverse an array from place
 import java.util.Scanner;
 
 public class array_2 {

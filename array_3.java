@@ -1,3 +1,5 @@
+// to find kth min  and max number
+
 import java.util.Scanner;
 
 public class array_3 {
