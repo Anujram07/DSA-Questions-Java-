@@ -1,5 +1,6 @@
-import java.util.Scanner;
+// To rotate an array circularly by one 
 
+import java.util.Scanner;
 public class array_7 {
     public static void main(String[] args) {
          Scanner in  = new Scanner(System.in);
