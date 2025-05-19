@@ -1,3 +1,4 @@
+// Dutch National Flag Problem
 public class array_8 {
     public static void main(String[] args) {
         int[] arr = {1, 2, 2, 0, 1, 0, 1, 2, 1};
