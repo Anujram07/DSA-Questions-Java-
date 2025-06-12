@@ -1,39 +1,34 @@
-//to find min and max in an array 
-
-
 import java.util.Scanner;
-public class array_1{
+
+public class array_1 {
     public static void main(String[] args) {
-       Scanner in = new Scanner(System.in);
-               System.out.println("Enter size of Array:");
-               int n=in.nextInt();
-               int[] arr=new int[n];
-               System.out.println("enter value of array");
-               for(int i=0;i<n;i++)
-               {
-                arr[i]=in.nextInt();
-               }
+        Scanner in = new Scanner(System.in);
 
+        System.out.println("Enter size of Array:");
+        int n = in.nextInt();
+        int[] arr = new int[n];
 
-              int  max = 0;
-            for(int i = 0; i<arr.length-1;i++){
-                if(arr[i]>arr[i+1]){
-                    max=arr[i];
-                }
+        System.out.println("Enter values of array:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = in.nextInt();
+        }
 
-            else{
-                max=arr[i+1];
+        // Initialize min and max to the first element
+        int max = arr[0];
+        int min = arr[0];
+
+        // Traverse the array to find max and min
+        for (int i = 1; i < n; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
             }
-       }
-            System.out.println("maximum:-"+max);
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
 
-
-    int min = 0;
-    for(int j=0;j<arr.length-1;j++){
-      if(arr[j]<arr[j+1]){
-        min = arr[j];
-      }
-    }
-    System.out.println("minimum:-"+min);
+        System.out.println("Maximum: " + max);
+        System.out.println("Minimum: " + min);
     }
 }
+
