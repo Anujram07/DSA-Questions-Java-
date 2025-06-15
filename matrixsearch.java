@@ -29,7 +29,7 @@ public class matrixsearch {
             {27, 29, 37, 48},
             {32, 33, 39, 50}
         };
-        int target = 29;
+        int target = 10;
         searchMatrix(matrix, target);
     }
 }
